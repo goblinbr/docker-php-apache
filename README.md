@@ -15,5 +15,5 @@ docker stop php
 1) **Dockerfile**, change **EXPOSE 8010** to **EXPOSE 80**  
 2) **apache-config.conf**, change **VirtualHost *:8010** to **VirtualHost *:80**  
 3) **ports.conf**, change **Listen 8010** to **Listen 80**  
+5) re-create docker image  
 4) at the run cmd, change **-p 8010:8010** to **-p 80:80**  
-5) re-create docker image
