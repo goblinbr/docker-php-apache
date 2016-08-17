@@ -6,7 +6,7 @@ cd docker-php-apache
 docker build -t php .  
 
 ## Run the docker image 
-docker run --name php -p 8010:8010 --rm -v /your_site_dir/:/var/www/php php &  
+docker run --name php -p 8010:8010 -v /your_site_dir/:/var/www/php -d php  
 
 ## Stop the docker image
 docker stop php  
